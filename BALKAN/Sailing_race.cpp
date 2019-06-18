@@ -1,6 +1,6 @@
 
 /*
-	Autor: Sofhia de Souza Gonçalves
+	Author: Sofhia de Souza Gonçalves
 	
 	Idea:
 		- Let vet[] be my array with the sequence of signs.
