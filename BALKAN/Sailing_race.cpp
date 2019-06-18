@@ -1,3 +1,19 @@
+
+/*
+	Autor: Sofhia de Souza Gonçalves
+	
+	Idea:
+		- Let vet[] be my array with the sequence of signs.
+		- I made a dp with 3 parameters: my actual position on array, the first sign in my left and the first sign in my 
+		right that I didn't visit yet.
+		- dist(a, b) = the distance between a and b.
+		- dp[x][y][z] = (min(dp[y][y-1][z]+dist(x, y), dp[z][y][z+1]+dist(x, z)))*(y+l-z+1), that is, dp[x][y][z] equals to the
+		sum of the distances of the less path from x, where x can go to y or z.
+*/
+
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
@@ -31,8 +47,8 @@ int main()
 	for(int i = 1 ; i <= l ; i++)
 	{
 		cin >> vet[i];
-		if(vet[i] < 0) k1 = i;
-		else if(k2 == -1) k2 = i;
+		if(vet[i] < 0) k1 = i;		//k1 is the first negative value before 0
+		else if(k2 == -1) k2 = i;	//k2 is the first positive value after 0
 	}
 
 	ll resp = solve(0, k1, k2);
