@@ -1,3 +1,14 @@
+
+/*
+	Author: Sofhia de Souza Gonçalves
+	
+	Idea: 
+		- I did a binary search in the time. For all the values that I choose for middle,  I tested and made a verification to
+		see if that value for the time was ok, and after all the binary search I printed the result.
+*/
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,17 +20,12 @@ int n;
 
 bool work(double x)
 {
-	double f = x+vet[0];
+	double f = x+vet[0]; //walked with the first messenger to as right as possible(f is the closest messenger of my actual messenger)
 	for(int i = 1 ; i < n ; i++)
 	{
 		double v = vet[i] - x;
-		if(v-k > f) return false;
-		else
-		{	
-			double aux = f-vet[i];
-			if(aux < 0) aux = 0;
-			f = min(vet[i]+x, f+k);
-		}
+		if(v-k > f) return false; //if the i messenger can't hear the closest messenger, I return false
+		else f = min(vet[i]+x, f+k); //else, I change my f to the messenger that is more closer to the next (me)
 	}
 	return true;
 }
