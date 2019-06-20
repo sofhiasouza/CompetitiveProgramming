@@ -4,12 +4,12 @@
 		Author: Sofhia de Souza Gonçalves
 		
 		Idea:
-			- To every stick, I change the 'x' that the stick broke, then I do a dfs() and keep the value of its component int the
-			array comp[][].
+			- To every stick, I change the 'x' that the stick broke, then I do a dfs() and keep the value of its
+			component int the array comp[][].
 			- After that, I calculate the value of the minimun distance (min_comp[]) from my component to other 
 			(or to the ground).
-			- I also see if the component is floating in the air. If yes, I change my matrix, and put my component p min_comp[p] 
-			rows below. 
+			- I also see if the component is floating in the air. If yes, I change my matrix, and put my component
+			p min_comp[p] rows below. 
 		
 	*/
 
