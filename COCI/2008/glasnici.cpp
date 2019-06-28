@@ -1,5 +1,6 @@
 
 /*
+	COI - Task Glasnici
 	Same idea of the link: 
 	https://github.com/mostafa-saad/MyCompetitiveProgramming/blob/master/Olympiad/COCI/official/2008/olympiad_solutions/glasnici.cpp
 */
