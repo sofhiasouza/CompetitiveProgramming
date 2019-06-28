@@ -72,11 +72,6 @@ void rotate(int u, int pai)
 			else dp2[k][i] = max(dp2[k][i], val);
 		}
  
-		//dp[0][v] = max(dp[k][v-1] + soma[k], dp[k][v]);
- 
-		//resp = max(resp, dp[0][v]);
-		//cout << u << ' ' << k << ' ' << dp[k][v] << endl;
- 
 		rotate(k, u);
  
 		for(int i = 1 ; i <= v ; i++) dp[u][i] = d1[i];
@@ -107,10 +102,8 @@ int main()
 		}
 	}
  
-	//grafo[0].pb(1);
  
 	dfs(1, 0);
-	//cout << resp << endl;
 	rotate(1, 0);
  
 	cout << resp << endl;
