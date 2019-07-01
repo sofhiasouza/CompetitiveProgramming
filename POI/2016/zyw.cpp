@@ -1,6 +1,13 @@
 
 	/*
-		The solution is the same as in this link: https://github.com/mostafa-saad/MyCompetitiveProgramming/tree/master/Olympiad/POI/official/2016
+		Author: Sofhia de Souza Gonçalves
+		
+		Idea:
+			- First, I put in the graph only the walls that are cypress.
+			- Then, I do a mst algorithm to conect all the vertexs in one component. Besides that, to every new path that 
+			I found to a vertex that I already visited, I put a wall in there. To every components that I do the join, I
+			remove a wall that separates this components. 
+	
 	*/
 
 
