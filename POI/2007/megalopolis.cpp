@@ -4,13 +4,10 @@
 	Author: Sofhia de Souza Gonçalves
 	
 	Idea:
-		- I do a dfs and I keep, for each vertex k, its moment of entrance and exit of the dfs, and I calculte how many
-		roads I walk to go to vertex 1 in cont[k].
-		
-		- Then, for each A question, I update my BIT of range, where the subtree of vertex x is all the values between 
-		the entry and the exit of x. I subtract a road in my entry and add it to my exit time (I add so that this 
-		subtraction don't be counted in other vertices that are not in my subtree).
-		
+		- I do a dfs and I keep, for each vertex k, its moment of entrance and exit of the dfs, and I calculte how many roads I walk to go to
+		vertex 1 in cont[k].
+		- Then, for each A question, I update my BIT of range, where the subtree of vertex x is all the values between the entry and
+		the exit of x. I subtract a road in my entry and add it to my exit time (I add so that this subtraction don't be counted in other 			vertices that are not in my subtree)
 		- For each W k question, I verify how many roads in the way of k were removed, and I subtract this of cont[k].
 
 
@@ -60,6 +57,10 @@ int query(int k)
 
 int main()
 {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+	
 	cin >> n;
 	
 	for(int i = 1 ; i <= n-1 ; i++)
