@@ -1,3 +1,20 @@
+/*
+	Author: Sofhia de Souza Gonçalves
+	
+	Idea:
+	
+	-For this solution, positions x are independent of positions y and vice versa.
+	First, I kept what signals each coordinate should have. After that, I checked which of these signs had changed
+	and which had remained since the last location. For those positions that had changed, I put the highest values
+	from the last coordinate to the first. 
+	
+	-For the intervals between these coordinates, I found the largest value I could add that would not exceed the 
+	range limit (this limit is the distance from the coordinate to point 0 of its axis and the absolute value of the 
+	amount that it will walk in the next coordinate that change of sign). That's because no matter what I do in this 
+	interval, if it doesn't exceed this limit, the next value that needs to change signal can change its signal.
+
+*/
+
 #include <iostream>
 #include <math.h>
 #include <set>
