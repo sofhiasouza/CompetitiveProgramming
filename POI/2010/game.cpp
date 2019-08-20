@@ -1,5 +1,6 @@
 
-//The solution is the same as in this link:https://github.com/mostafa-saad/MyCompetitiveProgramming/blob/master/Olympiad/POI/official/2010/code/gra/prog/gra.cpp
+//The solution is the same as in this link:
+//https://github.com/mostafa-saad/MyCompetitiveProgramming/blob/master/Olympiad/POI/official/2010/editorial/gra.pdf
 
 
 #include <bits/stdc++.h>
