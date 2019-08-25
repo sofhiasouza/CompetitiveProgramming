@@ -18,44 +18,44 @@ ll sum, dif[maxn], s, t;
 
 int main()
 {
-ios::sync_with_stdio(false);
-cin.tie(nullptr);
+      ios::sync_with_stdio(false);
+      cin.tie(nullptr);
 
-cin >> n >> q >> s >> t;
+      cin >> n >> q >> s >> t;
 
-for(int i = 0 ; i <= n ; i++) cin >> a[i];	
+      for(int i = 0 ; i <= n ; i++) cin >> a[i];	
 
-for(int i = 1 ; i <= n ; i++)
-{
-  dif[i] = a[i]-a[i-1];
-  if(dif[i] <= 0) sum += abs(dif[i]*t);
-  else sum -= abs(dif[i]*s);
-}
+      for(int i = 1 ; i <= n ; i++)
+      {
+              dif[i] = a[i]-a[i-1];
+              if(dif[i] <= 0) sum += abs(dif[i]*t);
+              else sum -= abs(dif[i]*s);
+      }
 
-dif[0] = dif[n+1] = 0;
+      dif[0] = dif[n+1] = 0;
 
-for(int i = 0 ; i < q ; i++)
-{
-  int l, r, x;
-  cin >> l >> r >> x;
+      for(int i = 0 ; i < q ; i++)
+      {
+              int l, r, x;
+              cin >> l >> r >> x;
 
-  if(dif[l] <= 0) sum -= abs(dif[l]*t);
-  else sum += abs(dif[l]*s);
+              if(dif[l] <= 0) sum -= abs(dif[l]*t);
+              else sum += abs(dif[l]*s);
 
-  if(dif[r+1] <= 0) sum -= abs(dif[r+1]*t);
-  else sum += abs(dif[r+1]*s);
+              if(dif[r+1] <= 0) sum -= abs(dif[r+1]*t);
+              else sum += abs(dif[r+1]*s);
 
-  dif[l] += x;
-  if(r+1 <= n) dif[r+1] -= x;
+              dif[l] += x;
+              if(r+1 <= n) dif[r+1] -= x;
 
-  if(dif[l] <= 0) sum += abs(dif[l]*t);
-  else sum -= abs(dif[l]*s);
+              if(dif[l] <= 0) sum += abs(dif[l]*t);
+              else sum -= abs(dif[l]*s);
 
-  if(dif[r+1] <= 0) sum += abs(dif[r+1]*t);
-  else sum -= abs(dif[r+1]*s);		
+              if(dif[r+1] <= 0) sum += abs(dif[r+1]*t);
+              else sum -= abs(dif[r+1]*s);		
 
-  cout << sum << endl;
+              cout << sum << endl;
 
-}
+      }
 
 }
