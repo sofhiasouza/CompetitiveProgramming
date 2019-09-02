@@ -1,11 +1,13 @@
-//IOI 2004 Hermes
-//Code by Sofhia de Souza
-//Idea:
-//  -I did a dp[i][j][k], where i is the god i, k is 0 if I'm in the x-coordenate of god i and is 1 if I'm in the y-coordenate
-//  of god i, and j is the other coordenate that I'm now (if k = 0, j represents the y coordenate, and if k = 1, j represents
-//  the x coordenate). With this, I can calculate all the possibilities (using memory trick, because of the memory limit), and
-//  then I just need to print the best of the last god.
-
+/*
+  IOI 2004 Hermes
+  Code by Sofhia de Souza
+  Idea:
+   
+    -I did a dp[i][j][k], where i is the god i, k is 0 if I'm in the x-coordenate of god i and is 1 if I'm in the y-coordenate
+    of god i, and j is the other coordenate that I'm now (if k = 0, j represents the y coordenate, and if k = 1, j represents
+    the x coordenate). With this, I can calculate all the possibilities (using memory trick, because of the memory limit), and
+    then I just need to print the best of the last god.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
