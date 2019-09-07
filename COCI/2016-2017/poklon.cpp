@@ -1,3 +1,6 @@
+//COCI 17-Poklon
+//Code by Sofhia de Souza
+
 #include <bits/stdc++.h>
 #define pb push_back
 using namespace std;
