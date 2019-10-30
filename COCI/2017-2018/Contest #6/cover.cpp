@@ -1,7 +1,7 @@
 //COCI 2017-2018 - Cover
 //Sofhia de Souza Gonçalves
 
-//Solution: https://codeforces.com/blog/entry/57508?#comment-411980https://codeforces.com/blog/entry/57508?#comment-411980
+//Solution: https://codeforces.com/blog/entry/57508?#comment-411980
 
 #include <bits/stdc++.h>
 #define int long long
@@ -25,7 +25,7 @@ int32_t main()
 	{
 		int x, y;
 
-    scanf("%lld %lld", &x, &y);
+	    	scanf("%lld %lld", &x, &y);
 
 		x = abs(x);
 		y = abs(y);
